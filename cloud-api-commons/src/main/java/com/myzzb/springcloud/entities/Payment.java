@@ -17,5 +17,5 @@ import java.time.LocalDateTime;
 public class Payment {
     private Long id;
     private String serial;
-    private LocalDateTime create_time;
+    private LocalDateTime createTime;
 }

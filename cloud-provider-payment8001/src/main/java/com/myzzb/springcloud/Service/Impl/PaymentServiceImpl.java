@@ -22,7 +22,7 @@ public class PaymentServiceImpl implements PaymentService {
     private PaymentMapper paymentMapper;
     @Override
     public int create(Payment payment) {
-        payment.setCreate_time(LocalDateTime.now());
+        payment.setCreateTime(LocalDateTime.now());
         payment.setSerial("zzb");
         return paymentMapper.insert(payment);
     }
