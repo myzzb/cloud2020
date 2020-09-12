@@ -1,23 +1,19 @@
 package com.myzzb.springcloud;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @author :zzb
- * @createDate :2020/9/10 11:04
+ * @createDate :2020/9/12 11:40
  * @desc :
  */
 @SpringBootApplication
-@MapperScan("com.myzzb.springcloud.mapper")
-@EnableEurekaClient
-@EnableDiscoveryClient
-public class PaymentMain8001 {
+@EnableDiscoveryClient //该注解用于向使用consul或者zookeeper作为注册中心时注册服务
+public class Payment8004 {
 
     public static void main(String[] args) {
-        SpringApplication.run(PaymentMain8001.class,args);
+        SpringApplication.run(Payment8004.class,args);
     }
 }
