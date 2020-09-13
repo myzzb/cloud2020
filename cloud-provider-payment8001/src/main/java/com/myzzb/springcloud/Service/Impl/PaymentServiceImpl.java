@@ -1,5 +1,6 @@
 package com.myzzb.springcloud.Service.Impl;
 
+import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.myzzb.springcloud.Service.PaymentService;
 import com.myzzb.springcloud.entities.Payment;
 import com.myzzb.springcloud.mapper.PaymentMapper;
@@ -15,7 +16,7 @@ import java.time.LocalDateTime;
  * @desc :
  */
 @Service
-public class PaymentServiceImpl implements PaymentService {
+public class PaymentServiceImpl extends ServiceImpl<PaymentMapper, Payment> implements PaymentService {
 
 
     @Resource
@@ -29,6 +30,7 @@ public class PaymentServiceImpl implements PaymentService {
 
     @Override
     public Payment getPaymentById(Long id) {
+
         return paymentMapper.selectById(id);
     }
 }

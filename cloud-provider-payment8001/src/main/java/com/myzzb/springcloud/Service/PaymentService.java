@@ -1,5 +1,6 @@
 package com.myzzb.springcloud.Service;
 
+import com.baomidou.mybatisplus.service.IService;
 import com.myzzb.springcloud.entities.Payment;
 
 /**
@@ -7,7 +8,7 @@ import com.myzzb.springcloud.entities.Payment;
  * @createDate :2020/9/10 11:22
  * @desc :
  */
-public interface PaymentService {
+public interface PaymentService extends IService<Payment> {
 
     public int create(Payment payment);
 

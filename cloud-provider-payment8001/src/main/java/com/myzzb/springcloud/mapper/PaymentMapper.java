@@ -1,6 +1,6 @@
 package com.myzzb.springcloud.mapper;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.myzzb.springcloud.entities.Payment;
 import org.apache.ibatis.annotations.Mapper;
 
