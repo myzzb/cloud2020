@@ -7,12 +7,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author :zzb
- * @createDate :2020/9/14 11:57 下午
+ * @createDate :2020/9/15 11:51
  * @desc :
  */
 @RestController
 @RefreshScope
 public class ConfigClientController {
+
 
     // 因为config仓库以rest形式暴露，所以所有客户端都可以通过config服务端访问到github上对应的文件信息
     @Value("${config.info}")
