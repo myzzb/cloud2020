@@ -4,7 +4,6 @@ import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import com.myzzb.springcloud.Service.PaymentService;
 import com.myzzb.springcloud.entities.Payment;
 import com.myzzb.springcloud.mapper.PaymentMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
