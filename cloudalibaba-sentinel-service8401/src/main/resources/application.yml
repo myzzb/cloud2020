@@ -12,9 +12,10 @@ spring:
     sentinel:
       transport:
         #配置Sentin dashboard地址
-        dashboard: http://106.52.195.148:8080
+        dashboard: http://192.168.8.8:8858
         # 默认8719端口，假如被占用了会自动从8719端口+1进行扫描，直到找到未被占用的 端口
         port: 8719
+        client-ip: 172.16.0.5
 
 management:
   endpoints:
